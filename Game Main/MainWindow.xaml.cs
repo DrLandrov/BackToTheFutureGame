@@ -28,6 +28,7 @@ namespace SnakeTest
         public double JumpProgress; // 0 - no jump, JumpProgress / speed_multiplier gives 1-9 
         public int[] JumpHeight = new int[10] { 0, 4, 7, 9, 12, 13, 12, 9, 7, 4 };
         public Image image;
+        public int lifes;
         public Direction direction;
         public void Animate()
         {
@@ -67,6 +68,7 @@ namespace SnakeTest
         public static List<Barrel> BarrelList;
         public int ScorePoints;
         public string PlayerName;
+
     }
 
     /// <summary>
@@ -104,6 +106,7 @@ namespace SnakeTest
             Canvas.SetLeft(this.Player, 10);
             Player.Width = 80;
             Player.Height = 80;
+            GameStatus.Player.lifes = 3;
 
             GameStatus.DonkeyKong = new DonkeyKong();
             GameStatus.DonkeyKong.posX = 500;
@@ -143,7 +146,11 @@ namespace SnakeTest
                 switch (GameStatus.Player.direction)
                 {
                     case Direction.Up:
-                        GameStatus.Player.posY -= 1 * speed_multiplier;
+                        if (GameStatus.Player.posY > 360)
+                        {
+                            GameStatus.Player.posY -= 1 * speed_multiplier;
+
+                        }
                         break;
                     case Direction.Right:
                         GameStatus.Player.posX += 1 * speed_multiplier;
@@ -181,7 +188,7 @@ namespace SnakeTest
 
 
                 // collision detection
-                
+
                 Rect rect1 = new Rect(Canvas.GetLeft(Player), Canvas.GetTop(Player), GameStatus.Player.sizeX, GameStatus.Player.sizeY);
                 Rect rect2 = new Rect(Canvas.GetLeft(DonkeyKong), Canvas.GetTop(DonkeyKong), GameStatus.DonkeyKong.sizeX, GameStatus.DonkeyKong.sizeY);
                 if (rect1.IntersectsWith(rect2))
@@ -190,16 +197,27 @@ namespace SnakeTest
                     Canvas.SetLeft(this.Player, 10);
                     GameStatus.Player.posX = 10;
                     GameStatus.Player.posY = 680;
+                    GameStatus.Player.lifes--;
+                    GameStatus.Player.direction = Direction.Stop;
+                }
+                if (GameStatus.Player.lifes == 0)
+                {
+                    Canvas.SetTop(this.Player, 680);
+                    Canvas.SetLeft(this.Player, 10);
+                    GameStatus.Player.posX = 10;
+                    GameStatus.Player.posY = 680;
                     GameStatus.Player.direction = Direction.Stop;
                     ScoreWindow scoreWindow = new ScoreWindow();
                     scoreWindow.Show();
+                    this.Close();
+                    GameStatus.Player.lifes = 3;
 
                 }
 
 
 
 
-                    this.tick_counter++;
+                this.tick_counter++;
                 
 
                 this.tick.Start();
@@ -219,13 +237,13 @@ namespace SnakeTest
             switch (e.Key)
             {
                case Key.Up:
-                    if(GameStatus.Player.posX > 1100 && GameStatus.Player.posX< 1200)
+                    if (GameStatus.Player.posX > 1200 && GameStatus.Player.posX < 1250)
                     {
                         GameStatus.Player.direction = Direction.Up;
-                        if(GameStatus.Player.posY == 432)
-                        {
-                            GameStatus.Player.direction = Direction.Stop;
-                        }
+                    }
+                    if (GameStatus.Player.posX > 270 && GameStatus.Player.posX < 320 && GameStatus.Player.posY == 360)
+                    {
+                        GameStatus.Player.direction = Direction.Up;
                     }
                     break;
                 //case Key.W:

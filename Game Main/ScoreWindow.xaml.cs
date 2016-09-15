@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SnakeTest;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -52,6 +53,13 @@ namespace Game_Main
                     "Database error", MessageBoxButton.OK, MessageBoxImage.Exclamation);
             }*/
 
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow win2 = new MainWindow();
+            win2.Show();
+            this.Close();
         }
     }
 }

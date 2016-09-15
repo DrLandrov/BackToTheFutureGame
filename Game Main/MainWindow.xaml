@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SnakeTest"
         mc:Ignorable="d"
-        Title="MainWindow" Height="865.5" Width="1610.5">
+        Title="MainWindow" Height="845.529" Width="1617.762">
     <Grid Background="Gray" RenderTransformOrigin="0.5,0.5">
         <Canvas Name="paintCanvas" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" KeyDown="paintCanvas_KeyDown">
             <Canvas.Background>
@@ -22,6 +22,15 @@
             <Image x:Name="DonkeyKong" Source="C:\Users\student\Documents\GoodGame\Game Main\Images\biff right.png" HorizontalAlignment="Left" VerticalAlignment="Top"/>
             <Image x:Name="ladder1" Source="C:\Users\student\Documents\GoodGame\Game Main\Images\ladder.png " Height="414" Canvas.Left="1103" Canvas.Top="417" Width="298"/>
             <Image x:Name="ladder2" Source="Images/ladder.png" Height="474" Canvas.Left="293" Canvas.Top="30" Width="345"/>
+            <Image x:Name="Bullet" Source="Images\Hit Left.png" Height="100" Canvas.Left="1406" Canvas.Top="341" Width="100"/>
+            <Image x:Name="Bullet_Copy" Source="Images/Hit Right.png" Height="100" Canvas.Left="260" Canvas.Top="341" Width="100"/>
+            <Image x:Name="Bullet_Copy1" Source="Images/Hit Left.png" Height="100" Canvas.Left="486" Canvas.Top="10" Width="100"/>
+            <Image x:Name="Bullet_Copy2" Source="Images/Hit Right.png" Height="100" Canvas.Left="1026" Canvas.Top="10" Width="100"/>
+            <Image x:Name="almanac" Source="Images/Almanac.png" Height="100" Canvas.Left="1483" Canvas.Top="10" Width="100"/>
+            <Image x:Name="Bullet_Copy3" Source="Images/Pepsi.png" Height="60" Canvas.Left="810" Canvas.Top="237" Width="84"/>
+            <Image x:Name="Bullet_Copy4" Source="Images/Pepsi.png" Height="60" Canvas.Left="173" Canvas.Top="297" Width="82"/>
+            <Image x:Name="Bullet_Copy5" Source="Images/pepsi.png" Height="60" Canvas.Left="1499" Canvas.Top="533" Width="84"/>
+            <Image x:Name="Bullet_Copy6" Source="Images/pepsi.png" Height="60" Canvas.Left="260" Canvas.Top="10" Width="84"/>
         </Canvas>
         <Image x:Name="image" Source="C:\Users\student\Documents\GoodGame\Game Main\Images\Bridge.png"  HorizontalAlignment="Left" Height="100" Margin="10,760,0,0" VerticalAlignment="Top" Width="100"/>
         <Image x:Name="image_Copy" Source="C:\Users\student\Documents\GoodGame\Game Main\Images\Bridge.png" HorizontalAlignment="Left" Height="100" Margin="110,760,0,0" VerticalAlignment="Top" Width="100"/>
@@ -55,18 +64,18 @@
         <Image x:Name="image_Copy28" Source="Images/Bridge.png" HorizontalAlignment="Left" Height="100" Margin="315,432,0,0" VerticalAlignment="Top" Width="100"/>
         <Image x:Name="image_Copy29" Source="Images/Bridge.png" HorizontalAlignment="Left" Height="100" Margin="215,432,0,0" VerticalAlignment="Top" Width="100"/>
         <Image x:Name="image_Copy30" Source="Images/Bridge.png" HorizontalAlignment="Left" Height="100" Margin="115,432,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="image_Copy43" Source="Images/Bridge.png" HorizontalAlignment="Left" Height="100" Margin="1482,46,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="image_Copy44" Source="Images/Bridge.png" HorizontalAlignment="Left" Height="100" Margin="1382,46,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="image_Copy45" Source="Images/Bridge.png" HorizontalAlignment="Left" Height="100" Margin="1282,46,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="image_Copy46" Source="Images/Bridge.png" HorizontalAlignment="Left" Height="100" Margin="1182,46,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="image_Copy47" Source="Images/Bridge.png" HorizontalAlignment="Left" Height="100" Margin="1082,46,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="image_Copy48" Source="Images/Bridge.png" HorizontalAlignment="Left" Height="100" Margin="982,46,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="image_Copy49" Source="Images/Bridge.png" HorizontalAlignment="Left" Height="100" Margin="882,46,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="image_Copy50" Source="Images/Bridge.png" HorizontalAlignment="Left" Height="100" Margin="782,46,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="image_Copy51" Source="Images/Bridge.png" HorizontalAlignment="Left" Height="100" Margin="682,46,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="image_Copy52" Source="Images/Bridge.png" HorizontalAlignment="Left" Height="100" Margin="482,46,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="image_Copy53" Source="Images/Bridge.png" HorizontalAlignment="Left" Height="100" Margin="382,46,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="image_Copy54" Source="Images/Bridge.png" HorizontalAlignment="Left" Height="100" Margin="582,46,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="image_Copy43" Source="Images/Bridge.png" HorizontalAlignment="Left" Height="100" Margin="1472,88,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="image_Copy44" Source="Images/Bridge.png" HorizontalAlignment="Left" Height="100" Margin="1372,88,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="image_Copy45" Source="Images/Bridge.png" HorizontalAlignment="Left" Height="100" Margin="1272,88,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="image_Copy46" Source="Images/Bridge.png" HorizontalAlignment="Left" Height="100" Margin="1172,88,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="image_Copy47" Source="Images/Bridge.png" HorizontalAlignment="Left" Height="100" Margin="1072,88,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="image_Copy48" Source="Images/Bridge.png" HorizontalAlignment="Left" Height="100" Margin="972,88,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="image_Copy49" Source="Images/Bridge.png" HorizontalAlignment="Left" Height="100" Margin="872,88,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="image_Copy50" Source="Images/Bridge.png" HorizontalAlignment="Left" Height="100" Margin="777,88,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="image_Copy51" Source="Images/Bridge.png" HorizontalAlignment="Left" Height="100" Margin="677,88,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="image_Copy52" Source="Images/Bridge.png" HorizontalAlignment="Left" Height="100" Margin="477,88,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="image_Copy53" Source="Images/Bridge.png" HorizontalAlignment="Left" Height="100" Margin="377,88,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="image_Copy54" Source="Images/Bridge.png" HorizontalAlignment="Left" Height="100" Margin="577,88,0,0" VerticalAlignment="Top" Width="100"/>
         <Image x:Name="image_Copy55" Source="Images/Bridge.png" HorizontalAlignment="Left" Height="100" Margin="15,432,0,0" VerticalAlignment="Top" Width="100"/>
 
     </Grid>

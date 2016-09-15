@@ -5,15 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Game_Main"
         mc:Ignorable="d"
-        Title="Window1" Height="300" Width="300">
+        Title="Window1" Height="600" Width="600">
     <Grid>
-        <Canvas HorizontalAlignment="Left" Height="270" VerticalAlignment="Top" Width="292" Background="Black">
+        <Canvas HorizontalAlignment="Left" Height="570" VerticalAlignment="Top" Width="592" Background="Black">
 
-            <Image x:Name="intro" Source="Images\introbkg.jpg" Height="181" Canvas.Left="34" Canvas.Top="22" Width="216" Stretch="Fill"/>
-            <TextBox x:Name="tbName" Height="25" Canvas.Left="75" TextWrapping="Wrap" Canvas.Top="187" Width="136" />
-            <Label x:Name="lblName" Content="ENTER NAME" Background="Black" Foreground="LightBlue" Canvas.Left="75" Canvas.Top="162" Height="25" Width="136" Grid.IsSharedSizeScope="True" IsEnabled="False" RenderTransformOrigin="0.5,0.5" FontFamily="Showcard Gothic"/>
-            <Button x:Name="btStart" Content="Start" Background="Black" Foreground="LightBlue" Canvas.Left="102" Canvas.Top="226" Width="75" Click="btStart_Click"/>
-            <Label x:Name="label" Content="Label" Background="Black" Canvas.Left="75" Canvas.Top="131" Width="136"/>
+            <Image x:Name="intro" Source="Images\introbkg.jpg" Height="275" Canvas.Left="34" Canvas.Top="22" Width="548" Stretch="Fill"/>
+            <TextBox x:Name="tbName" Height="25" Canvas.Left="240" TextWrapping="Wrap" Canvas.Top="322" Width="136" />
+            <Label x:Name="lblName" Content="ENTER NAME" Background="Black" Foreground="LightBlue" Canvas.Left="240" Canvas.Top="297" Height="25" Width="136" Grid.IsSharedSizeScope="True" IsEnabled="False" RenderTransformOrigin="0.5,0.5" FontFamily="Showcard Gothic"/>
+            <Button x:Name="btStart" Content="Start" Background="Black" Foreground="LightBlue" Canvas.Left="208" Canvas.Top="352" Width="191" Click="btStart_Click" Height="86"/>
         </Canvas>
 
     </Grid>
