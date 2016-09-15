@@ -21,15 +21,24 @@ namespace Game_Main
     /// </summary>
     public partial class Window1 : Window
     {
+        Database db;
         public Window1()
         {
-
-
+            try
+            {
+                db = new Database();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Error");
+            }
+            InitializeComponent();
         }
 
         private void btStart_Click(object sender, RoutedEventArgs e)
         {
             string Name = tbName.Text;
+            int Score = 0;
 
             if (Name.Length < 2)
             {
@@ -43,9 +52,9 @@ namespace Game_Main
                 this.Close();
 
             }
-
+            Person p = new Person() { Name = Name , Score = Score};
+            db.AddPerson(p);
         }
-
-
+        
     }
 }

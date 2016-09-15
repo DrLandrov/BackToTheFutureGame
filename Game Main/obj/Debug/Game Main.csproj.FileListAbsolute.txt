@@ -33,3 +33,18 @@ C:\Users\student\Documents\GoodGame\Game Main\obj\Debug\ScoreWindow.baml
 C:\Users\student\Documents\BackToTheFutureGame\Game Main\bin\Debug\Game Main.exe.config
 C:\Users\student\Documents\BackToTheFutureGame\Game Main\obj\Debug\Game Main.exe
 C:\Users\student\Documents\BackToTheFutureGame\Game Main\obj\Debug\Game Main.pdb
+C:\Users\student\Documents\BackToTheFutureGame\Game Main\bin\Debug\Game Main.exe
+C:\Users\student\Documents\BackToTheFutureGame\Game Main\bin\Debug\Game Main.pdb
+C:\Users\student\Documents\BackToTheFutureGame\Game Main\obj\Debug\Game Main.csprojResolveAssemblyReference.cache
+C:\Users\student\Documents\BackToTheFutureGame\Game Main\obj\Debug\MainWindow.g.cs
+C:\Users\student\Documents\BackToTheFutureGame\Game Main\obj\Debug\ScoreWindow.g.cs
+C:\Users\student\Documents\BackToTheFutureGame\Game Main\obj\Debug\StartGameWindow.g.cs
+C:\Users\student\Documents\BackToTheFutureGame\Game Main\obj\Debug\App.g.cs
+C:\Users\student\Documents\BackToTheFutureGame\Game Main\obj\Debug\Game Main_MarkupCompile.cache
+C:\Users\student\Documents\BackToTheFutureGame\Game Main\obj\Debug\Game Main_MarkupCompile.lref
+C:\Users\student\Documents\BackToTheFutureGame\Game Main\obj\Debug\MainWindow.baml
+C:\Users\student\Documents\BackToTheFutureGame\Game Main\obj\Debug\ScoreWindow.baml
+C:\Users\student\Documents\BackToTheFutureGame\Game Main\obj\Debug\StartGameWindow.baml
+C:\Users\student\Documents\BackToTheFutureGame\Game Main\obj\Debug\Game Main.g.resources
+C:\Users\student\Documents\BackToTheFutureGame\Game Main\obj\Debug\Game_Main.Properties.Resources.resources
+C:\Users\student\Documents\BackToTheFutureGame\Game Main\obj\Debug\Game Main.csproj.GenerateResource.Cache
