@@ -48,3 +48,21 @@ C:\Users\student\Documents\BackToTheFutureGame\Game Main\obj\Debug\StartGameWind
 C:\Users\student\Documents\BackToTheFutureGame\Game Main\obj\Debug\Game Main.g.resources
 C:\Users\student\Documents\BackToTheFutureGame\Game Main\obj\Debug\Game_Main.Properties.Resources.resources
 C:\Users\student\Documents\BackToTheFutureGame\Game Main\obj\Debug\Game Main.csproj.GenerateResource.Cache
+C:\Users\AlexL\OneDrive\Documents\BackToTheFutureGame\Game Main\bin\Debug\Game Main.exe.config
+C:\Users\AlexL\OneDrive\Documents\BackToTheFutureGame\Game Main\obj\Debug\Game Main.csprojResolveAssemblyReference.cache
+C:\Users\AlexL\OneDrive\Documents\BackToTheFutureGame\Game Main\obj\Debug\MainWindow.g.cs
+C:\Users\AlexL\OneDrive\Documents\BackToTheFutureGame\Game Main\obj\Debug\ScoreWindow.g.cs
+C:\Users\AlexL\OneDrive\Documents\BackToTheFutureGame\Game Main\obj\Debug\StartGameWindow.g.cs
+C:\Users\AlexL\OneDrive\Documents\BackToTheFutureGame\Game Main\obj\Debug\App.g.cs
+C:\Users\AlexL\OneDrive\Documents\BackToTheFutureGame\Game Main\obj\Debug\Game Main_MarkupCompile.cache
+C:\Users\AlexL\OneDrive\Documents\BackToTheFutureGame\Game Main\obj\Debug\Game Main_MarkupCompile.lref
+C:\Users\AlexL\OneDrive\Documents\BackToTheFutureGame\Game Main\obj\Debug\MainWindow.baml
+C:\Users\AlexL\OneDrive\Documents\BackToTheFutureGame\Game Main\obj\Debug\ScoreWindow.baml
+C:\Users\AlexL\OneDrive\Documents\BackToTheFutureGame\Game Main\obj\Debug\StartGameWindow.baml
+C:\Users\AlexL\OneDrive\Documents\BackToTheFutureGame\Game Main\obj\Debug\Game Main.g.resources
+C:\Users\AlexL\OneDrive\Documents\BackToTheFutureGame\Game Main\obj\Debug\Game Main.pdb
+C:\Users\AlexL\OneDrive\Documents\BackToTheFutureGame\Game Main\bin\Debug\Game Main.exe
+C:\Users\AlexL\OneDrive\Documents\BackToTheFutureGame\Game Main\bin\Debug\Game Main.pdb
+C:\Users\AlexL\OneDrive\Documents\BackToTheFutureGame\Game Main\obj\Debug\Game_Main.Properties.Resources.resources
+C:\Users\AlexL\OneDrive\Documents\BackToTheFutureGame\Game Main\obj\Debug\Game Main.csproj.GenerateResource.Cache
+C:\Users\AlexL\OneDrive\Documents\BackToTheFutureGame\Game Main\obj\Debug\Game Main.exe
