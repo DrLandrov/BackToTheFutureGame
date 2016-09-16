@@ -3,23 +3,51 @@ TODO
 Create database table
 Create XAML
 
+Roshan == Sept 6
+Yesterdays tasks done
+ToDo
+make rough layout of level on photoshop for reference 
+create png images of characters and obstacles using photoshop
+
+
 Alex == 7 sept
 Database was done.
 Project preview was done.
 TODO: Link database images with code
 Upload images to database
 
+Roshan = Sept 7
+Yesterdays tasks done
+Todo
+make rough layout of level in xaml and implement png images in xaml
+*had problems importing png into image box but figured it out
+
+
 Alex == 8 sept
 Figured out how to populate database with images
 TODO: Level design, character creation, scripting,
  AI, obstacle creation, make database for characters and background
+
+
+Roshan = Sept 8
+Yesterdays tasks done
+make player move with keys
+
 
 Alex == 9sept
 Figured out Canvas and player movement
 TODO: Position objects, key strokes movements, focus on canvas
 PRE-WEEKEND 
 
+Roshan = Sept 9
+make player only move with keys
+*almost working player only moves one square
 
+Alex == sept 12
+TODO: 
+-Figure out character movement with arrow keys.
+-make character image display.
+ 
 
 Roshan == sept 12
 TODO:
@@ -31,7 +59,7 @@ TODO:
 Roshan == Sept 13
 Create new reposotory
 ToDO: 
-- Create rough layout for the game.
+- Create layout for the game.
 - create boundries and walls.
 - create collision detection when charachter intersects with enemy.
 
@@ -44,3 +72,22 @@ TODO: Work on game physics and collision. Ennemy movement too.
 Alex==14sept
 Collision is starting to work. Ennemy movement too.
 Work on collision and location of ennemies and character. Work on game physics.
+
+Roshan == Sept 14
+-finished level layout of the game
+-figure out collision detection with enemy
+
+
+Alex == 15sept
+Collision is done, Physics almost done, Location is done.
+Work on Moving ennemies and ladder physics. Working on Database and azure. Adding highscore and Name to the Highscore table and database
+
+Roshan == Sept 15
+-Fixed collision with moving enemy.
+-created database cs file.
+-created Start game window for player to enter name and added 
+ start game button.
+-Created a window to display player name and high score when player
+-collides with enemy.
+-Linked all the windows together.
+-Reset player location when player collided with enemy.
