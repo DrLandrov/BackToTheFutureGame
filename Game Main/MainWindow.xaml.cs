@@ -64,7 +64,7 @@ namespace SnakeTest
     // state of the game
         public static Player Player;
         public static DonkeyKong DonkeyKong;
-        public static List<Barrel> BarrelList;
+        public static Barrel Barrel;        
         public int ScorePoints;
         public string PlayerName;
     }
@@ -114,6 +114,16 @@ namespace SnakeTest
             Canvas.SetLeft(this.DonkeyKong, 500);
             DonkeyKong.Width = 60;
             DonkeyKong.Height = 60;
+
+            GameStatus.Barrel = new Barrel();
+            GameStatus.Barrel.posX = 10;
+            GameStatus.Barrel.posY = 350;
+            GameStatus.Barrel.sizeX = 50;
+            GameStatus.Barrel.sizeY = 50;
+            Canvas.SetTop(this.Barrel, 350);
+            Canvas.SetLeft(this.Barrel, 10);
+            Barrel.Width = 47;
+            Barrel.Height = 39;
 
             this.time_multiplier = 10;
             this.rnd = new Random();
@@ -184,6 +194,7 @@ namespace SnakeTest
                 
                 Rect rect1 = new Rect(Canvas.GetLeft(Player), Canvas.GetTop(Player), GameStatus.Player.sizeX, GameStatus.Player.sizeY);
                 Rect rect2 = new Rect(Canvas.GetLeft(DonkeyKong), Canvas.GetTop(DonkeyKong), GameStatus.DonkeyKong.sizeX, GameStatus.DonkeyKong.sizeY);
+                Rect Barrel1 = new Rect(Canvas.GetLeft(Barrel), Canvas.GetTop(Barrel), Barrel.Width, Barrel.Height);
                 if (rect1.IntersectsWith(rect2))
                 {
                     Canvas.SetTop(this.Player, 680);
@@ -195,11 +206,29 @@ namespace SnakeTest
                     scoreWindow.Show();
 
                 }
+            if (rect1.IntersectsWith(Barrel1))
+                {
+
+                    Canvas.SetTop(this.Barrel, 350);
+                    Canvas.SetLeft(this.Barrel, 0);
+                    GameStatus.Barrel.posX = 0;
+                    GameStatus.Barrel.posY = 350;             
+                    GameStatus.Barrel.direction = Direction.Stop;
+                    Canvas.SetTop(this.Player, 680);
+                    Canvas.SetLeft(this.Player, 10);
+                    GameStatus.Player.posX = 10;
+                    GameStatus.Player.posY = 680;
+                    GameStatus.Player.direction = Direction.Stop;
+                    ScoreWindow scoreWindow = new ScoreWindow();
+                    scoreWindow.Show();
+                    
+
+                }
 
 
 
 
-                    this.tick_counter++;
+            this.tick_counter++;
                 
 
                 this.tick.Start();

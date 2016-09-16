@@ -6,39 +6,58 @@
         xmlns:local="clr-namespace:SnakeTest"
         mc:Ignorable="d"
         Title="MainWindow" Height="865.5" Width="1610.5">
+    
     <Grid Background="Gray" RenderTransformOrigin="0.5,0.5">
+        
         <Canvas Name="paintCanvas" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" KeyDown="paintCanvas_KeyDown">
+            
+            <Canvas.Triggers>
+                <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+                    <BeginStoryboard >
+
+                        <Storyboard Storyboard.TargetName="Barrel" Storyboard.TargetProperty="(Canvas.Left)">
+
+                           
+                            <DoubleAnimation From="1610" To="0" Duration="0:0:1" AccelerationRatio=".2" DecelerationRatio=".8" RepeatBehavior="23:59:59" AutoReverse="True"/>
+
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Canvas.Triggers>
             <Canvas.Background>
-                <ImageBrush ImageSource="C:\Users\student\Documents\Working Game Project\Game Main\Game Main\Images\bkg.png">
+                <ImageBrush ImageSource="Images\bkg.png">
 
                 </ImageBrush>
             </Canvas.Background>
+
             <Label Content="Score:" Canvas.Right="216" Canvas.Top="0" Height="25" Canvas.Left="0"/>
             <Label x:Name="score_label" Canvas.Right="205" Canvas.Top="0" Height="25" Canvas.Left="47" Width="41"/>
 
             <Label Content="Level:" Canvas.Right="16" Canvas.Top="0" Height="25" Canvas.Left="424"/>
             <Label x:Name="level_label" Canvas.Right="5" Canvas.Top="0" Height="25" Canvas.Left="468" Width="44"/>
-            <Image x:Name="Player" Loaded="OnLoad" Source="C:\Users\student\Documents\Working Game Project\Game Main\Game Main\Images\MartyRight.png" KeyDown="image_KeyDown" KeyUp="image_KeyUp"/>
-            <Image x:Name="DonkeyKong" Source="C:\Users\student\Documents\GoodGame\Game Main\Images\biff right.png" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <Image x:Name="ladder1" Source="C:\Users\student\Documents\GoodGame\Game Main\Images\ladder.png " Height="414" Canvas.Left="1103" Canvas.Top="417" Width="298"/>
+            <Image x:Name="Player" Loaded="OnLoad" Source="Images\MartyRight.png" KeyDown="image_KeyDown" KeyUp="image_KeyUp"/>
+            <Image x:Name="Barrel" Loaded="OnLoad" Source="Images\Hit Right.png" Canvas.Left="122" Canvas.Top="162" Stretch="None" />
+            <Image x:Name="DonkeyKong" Source="Images\biff right.png" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Image x:Name="ladder1" Source="Images\ladder.png " Height="414" Canvas.Left="1103" Canvas.Top="417" Width="298"/>
             <Image x:Name="ladder2" Source="Images/ladder.png" Height="474" Canvas.Left="293" Canvas.Top="30" Width="345"/>
+            <MediaElement x:Name="mediaElement" Loaded="OnLoad" Source="Images\Back to the Future Theme 8 Bit.mp3" Height="100" Canvas.Left="1492" Canvas.Top="10" Width="100" Volume="7"/>
         </Canvas>
-        <Image x:Name="image" Source="C:\Users\student\Documents\GoodGame\Game Main\Images\Bridge.png"  HorizontalAlignment="Left" Height="100" Margin="10,760,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="image_Copy" Source="C:\Users\student\Documents\GoodGame\Game Main\Images\Bridge.png" HorizontalAlignment="Left" Height="100" Margin="110,760,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="image_Copy1" Source="C:\Users\student\Documents\GoodGame\Game Main\Images\Bridge.png" HorizontalAlignment="Left" Height="100" Margin="210,760,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="image_Copy2" Source="C:\Users\student\Documents\GoodGame\Game Main\Images\Bridge.png" HorizontalAlignment="Left" Height="100" Margin="310,760,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="image_Copy3" Source="C:\Users\student\Documents\GoodGame\Game Main\Images\Bridge.png" HorizontalAlignment="Left" Height="100" Margin="410,760,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="image_Copy4" Source="C:\Users\student\Documents\GoodGame\Game Main\Images\Bridge.png" HorizontalAlignment="Left" Height="100" Margin="510,760,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="image_Copy5" Source="C:\Users\student\Documents\GoodGame\Game Main\Images\Bridge.png" HorizontalAlignment="Left" Height="100" Margin="610,760,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="image_Copy6" Source="C:\Users\student\Documents\GoodGame\Game Main\Images\Bridge.png" HorizontalAlignment="Left" Height="100" Margin="710,760,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="image_Copy7" Source="C:\Users\student\Documents\GoodGame\Game Main\Images\Bridge.png" HorizontalAlignment="Left" Height="100" Margin="810,760,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="image_Copy8" Source="C:\Users\student\Documents\GoodGame\Game Main\Images\Bridge.png" HorizontalAlignment="Left" Height="100" Margin="910,760,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="image_Copy9" Source="C:\Users\student\Documents\GoodGame\Game Main\Images\Bridge.png" HorizontalAlignment="Left" Height="100" Margin="1010,760,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="image_Copy10" Source="C:\Users\student\Documents\GoodGame\Game Main\Images\Bridge.png" HorizontalAlignment="Left" Height="100" Margin="1110,760,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="image_Copy11" Source="C:\Users\student\Documents\GoodGame\Game Main\Images\Bridge.png" HorizontalAlignment="Left" Height="100" Margin="1210,760,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="image_Copy12" Source="C:\Users\student\Documents\GoodGame\Game Main\Images\Bridge.png" HorizontalAlignment="Left" Height="100" Margin="1310,760,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="image_Copy13" Source="C:\Users\student\Documents\GoodGame\Game Main\Images\Bridge.png" HorizontalAlignment="Left" Height="100" Margin="1410,760,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="image_Copy14" Source="C:\Users\student\Documents\GoodGame\Game Main\Images\Bridge.png" HorizontalAlignment="Left" Height="100" Margin="1510,760,-18,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="image" Source="Images\Bridge.png"  HorizontalAlignment="Left" Height="100" Margin="10,760,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="image_Copy" Source="Images\Bridge.png" HorizontalAlignment="Left" Height="100" Margin="110,760,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="image_Copy1" Source="Images\Bridge.png" HorizontalAlignment="Left" Height="100" Margin="210,760,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="image_Copy2" Source="Images\Bridge.png" HorizontalAlignment="Left" Height="100" Margin="310,760,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="image_Copy3" Source="Images\Bridge.png" HorizontalAlignment="Left" Height="100" Margin="410,760,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="image_Copy4" Source="Images\Bridge.png" HorizontalAlignment="Left" Height="100" Margin="510,760,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="image_Copy5" Source="Images\Bridge.png" HorizontalAlignment="Left" Height="100" Margin="610,760,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="image_Copy6" Source="Images\Bridge.png" HorizontalAlignment="Left" Height="100" Margin="710,760,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="image_Copy7" Source="Images\Bridge.png" HorizontalAlignment="Left" Height="100" Margin="810,760,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="image_Copy8" Source="Images\Bridge.png" HorizontalAlignment="Left" Height="100" Margin="910,760,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="image_Copy9" Source="Images\Bridge.png" HorizontalAlignment="Left" Height="100" Margin="1010,760,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="image_Copy10" Source="Images\Bridge.png" HorizontalAlignment="Left" Height="100" Margin="1110,760,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="image_Copy11" Source="Images\Bridge.png" HorizontalAlignment="Left" Height="100" Margin="1210,760,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="image_Copy12" Source="Images\Bridge.png" HorizontalAlignment="Left" Height="100" Margin="1310,760,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="image_Copy13" Source="Images\Bridge.png" HorizontalAlignment="Left" Height="100" Margin="1410,760,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="image_Copy14" Source="Images\Bridge.png" HorizontalAlignment="Left" Height="100" Margin="1510,760,-18,0" VerticalAlignment="Top" Width="100"/>
         <Image x:Name="image_Copy15" Source="Images/Bridge.png"  HorizontalAlignment="Left" Height="100" Margin="-90,760,0,0" VerticalAlignment="Top" Width="100"/>
         <Image x:Name="image_Copy16" Source="Images/Bridge.png" HorizontalAlignment="Left" Height="100" Margin="1505,432,-13,0" VerticalAlignment="Top" Width="100"/>
         <Image x:Name="image_Copy17" Source="Images/Bridge.png" HorizontalAlignment="Left" Height="100" Margin="1410,432,0,0" VerticalAlignment="Top" Width="100"/>
