@@ -8,6 +8,15 @@
         Title="MainWindow" Height="845.529" Width="1617.762">
     <Grid Background="Gray" RenderTransformOrigin="0.5,0.5">
         <Canvas Name="paintCanvas" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" KeyDown="paintCanvas_KeyDown">
+            <Canvas.Triggers>
+                <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard Storyboard.TargetName="Barrel2" Storyboard.TargetProperty="(Canvas.Left)">
+                            <DoubleAnimation From="100" To="720" Duration="0:0:1" AccelerationRatio=".3" DecelerationRatio=".7" RepeatBehavior="23:59:59" AutoReverse="True"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Canvas.Triggers>
             <Canvas.Background>
                 <ImageBrush ImageSource="Images\bkg.png">
 

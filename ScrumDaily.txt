@@ -19,7 +19,11 @@ Figured out Canvas and player movement
 TODO: Position objects, key strokes movements, focus on canvas
 PRE-WEEKEND 
 
-
+Alex == sept 12
+TODO: 
+-Figure out character movement with arrow keys.
+-make character image display.
+ 
 
 Roshan == sept 12
 TODO:
